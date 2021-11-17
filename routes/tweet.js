@@ -3,7 +3,7 @@ const router = express.Router();
 const Twit = require('twit');
 const config = require("config");
 
-// load twitter keys
+// load twitter keys in config file (path : config/default.json )
 const T = new Twit({
     consumer_key: config.get("CONSUMER_KEY"),
     consumer_secret: config.get("CONSUMER_SECRET"),
